@@ -12,12 +12,12 @@ git clone https://github.com/awslabs/dynamodb-online-index-violation-detector.gi
 cd dynamodb-online-index-violation-detector
 mvn package
 ```
-This will generate a jar named ViolationDetector.java in the dynamodb-online-index-violation-detector directory.
+This will generate a jar named ViolationDetector.jar in the dynamodb-online-index-violation-detector directory.
 
 ## Usage
-You can run the generated jar named ViolationDetector.java to start detecting and correcting violations on any DynamoDB table.
+You can run the generated jar named ViolationDetector.jar to start detecting and correcting violations on any DynamoDB table.
 ```
-java -jar ViolationDetector.java [options]
+java -jar ViolationDetector.jar [options]
 ```
 ### Available options:
 - -p,--configFilePath \<configFilePath\>
