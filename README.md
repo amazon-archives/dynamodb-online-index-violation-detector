@@ -1,5 +1,5 @@
 ## Overview
-For an overview of of the DynamoDB Online Index Violation Detector Tool, please refer to the [AWS DynamoDB Documentation](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.OnlineOps.ViolationDetection.html).
+For an overview of the DynamoDB Online Index Violation Detector Tool, please refer to the [AWS DynamoDB Documentation](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.OnlineOps.ViolationDetection.html).
 
 ## Minimum Requirements
 - Java 1.7+
