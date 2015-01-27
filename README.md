@@ -37,3 +37,6 @@ Once you have the server running, run the following command to start integration
 ```
 mvn integration-test
 ```
+
+## Limitations
+- The 'recordDetails' option with value set as 'true' does not work for binary attribute values that cannot be encoded using UTF-8 character set.
