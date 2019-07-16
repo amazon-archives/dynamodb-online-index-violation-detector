@@ -29,7 +29,7 @@ import com.amazonaws.services.dynamodbv2.model.TableDescription;
 
 /**
  * Get table information.
- * 
+ *
  */
 public class TableHelper {
 
@@ -148,10 +148,12 @@ public class TableHelper {
     }
 
     public long getReadCapacityUnits() {
-        return tableDescription.getProvisionedThroughput().getReadCapacityUnits();
+        Long readCapacityUnits = tableDescription.getProvisionedThroughput().getReadCapacityUnits();
+        return readCapacityUnits != 0 ? readCapacityUnits : 100;
     }
 
     public long getWriteCapacityUnits() {
-        return tableDescription.getProvisionedThroughput().getWriteCapacityUnits();
+        Long writeCapacityUnits = tableDescription.getProvisionedThroughput().getWriteCapacityUnits();
+        return writeCapacityUnits != 0 ? writeCapacityUnits : 100;
     }
 }
